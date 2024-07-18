@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scrollbar-width: none;
+}
+
+.ParentDiv{
+    height: 100%;
+    width: fit-content;
+    background-color: black;
+}
+
+.ImgDiv{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0) ,rgba(0,0,0,1)), url(Singer\ KK.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    border: none;
+
+}
+
+
+.NameDiv{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    color: white;
+    background:transparent;
+    background-color: black;
+   
+}
+ #oo{
+    padding: 2px 0;
+    scale: 1.5; opacity: 0.6;
+    animation: fade-in linear;
+    animation-timeline: view();
+ }
+
+@keyframes fade-in{
+    to{padding: 5px 0; scale: 2.5; opacity: 1; }
+    
+}
+
+#Arrow{
+    margin-top: 10px;
+}
+
+
+.AboutDiv{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding:40px 0 10px 0;
+    gap: 15px;
+    width: 100%;
+    height: 800px;
+    overflow-y: scroll;
+    background-color:black;
+ 
+}
+
+p,li{
+    list-style: none;
+    font-size: smaller;
+    padding: 0 20px 0 30px;
+    color: rgba(255, 255, 255, 0.904);
+    
+}
+
+mark{
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+}
+
+
+.FooterDiv{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+
+    .ParentDiv{
+        height: 100%;
+        width: 100%;
+        background-color: black;
+    }
+
+    .ImgDiv{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        height: 550px;
+        width:100%;
+        background-image: linear-gradient(rgba(0,0,0,0) ,rgba(0,0,0,1)), url(KK\ singer.png);
+        background-size: contain;
+        background-position:43vw;
+        background-repeat: no-repeat;
+    
+    }
+
+    .NameDiv{
+        position: relative;
+        margin-top:-425px ;
+        margin-left: -420px;
+        padding: 100px;
+        background-color: transparent;
+       
+    }
+
+    #oo{
+        font-size: 40px;
+        opacity: .8;
+     }
+    
+    @keyframes fade-in{
+        
+     }
+
+     .AboutDiv{
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding:40px 0 40px 0;
+        width: 100%;
+        height: 800px;
+        overflow-y: scroll;
+        background-color:rgba(255, 255, 255, 0.945);
+        scrollbar-width: none;
+    }
+
+    .LiDiv{
+        margin-left: -410px;
+    }
+
+    p,li{
+        list-style: none;
+        font-size: 15px;
+        padding: 0 300px 0 300px;
+        color:black;
+        
+    }
+
+    mark{
+        font-weight:510;
+        background-color: transparent;
+        color: black;
+    }
+    
+    
+    .FooterDiv{
+        width: 100%;
+        height: 40px;
+        background-color: black;
+    }
+ 
+}
